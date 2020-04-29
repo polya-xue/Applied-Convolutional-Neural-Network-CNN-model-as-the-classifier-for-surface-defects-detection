@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/polya/mine/opencv_for_c++/videoCapture/main.cpp
+opencv2/opencv.hpp
+-
+iostream
+-
+fstream
+-
+
