@@ -1,17 +1,12 @@
-基于linux系统C++环境的人脸识别系统
-具体内容：EgienFace算法的核心思想是将图像数据使用PCA算法降维，空间变换后做形似性计算。该人脸识别系统基于EgienFace算法，为数据库里的每个人脸生成一组特征向量，以此来分辨不同的人脸。目前数据库里包含40组人脸数据，程序识别人脸过程较快，错误率较低。
-具体过程：
-1、生成数据库：在原有数据库的基础上，想要识别新的人脸，需要大约十秒的生成人脸数据的过程。启用video_capture程序，使用电脑自带摄像头，程序会以两秒为间隔采集不同表情，规范化尺寸后存入数据库；
-2、识别人脸：启用recFace_project，摄像头开启，识别人脸。识别结果会标注在屏幕上。
+Face recognition system based on linux system C++ environment
+Details: The core idea of EgienFace algorithm is to reduce the dimensionality of image data using PCA algorithm and do the shape similarity calculation after spatial transformation. The face recognition system is based on the EgienFace algorithm, which generates a set of feature vectors for each face in the database, so as to distinguish different faces. At present, the database contains 40 sets of face data, and the process of recognizing faces is fast and the error rate is low.
+Specific process.
+1、First call the original database and use it as the basis to adjust the new face features.
+2、Enable the video_capture program and use the computer's own camera to start capturing. The program will capture different expressions at two-second intervals, normalize the size and store them in the database.
+3、Recognize faces: enable recFace_project, the camera is turned on and faces are recognized. The recognition result will be marked on the screen.
 
 
-EgienFace算法原理:
-EgienFace的核心思想是特征脸，将图片数据使用PCA算法进行降维，空间变换后做相似性计算。EigenFace方法利用PCA得到人脸分布的主要成分，实现对训练集中所有人脸图像的协方差矩阵进行本征值分解，得对对应的本征向量。这些本征向量（特征向量）就是“特征脸”。每个特征向量或者特征脸相当于捕捉或者描述人脸之间的一种变化或者特性。这就意味着每个人脸都可以表示为这些特征脸的线性组合。具体过程：
-1）将训练集的每一个人脸图像都拉长一列，将他们组合在一起形成一个大矩阵A。假设每个人脸图像是MxM大小，那么拉成一列后每个人脸样本的维度就是d=MxM大小了。假设有N个人脸图像，那么样本矩阵A的维度就是dxN了。
-2）将所有的N个人脸在对应维度上加起来，然后求个平均，就得到了一个“平均脸”。你把这个脸显示出来的话，还挺帅的哦。
-3）将N个图像都减去那个平均脸图像，得到差值图像的数据矩阵Φ。
-4）计算协方差矩阵C=ΦΦT。再对其进行特征值分解。就可以得到想要的特征向量（特征脸）了。
-5）将训练集图像和测试集的图像都投影到这些特征向量上了，再对测试集的每个图像找到训练集中的最近邻或者k近邻啥的，进行分类即可。
+
 
 
 
