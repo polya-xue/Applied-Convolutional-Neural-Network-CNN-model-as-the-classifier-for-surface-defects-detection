@@ -16,3 +16,5 @@ Our company is responsible for detecting defects on the surface of pipe piles. T
 We made an alarm interface software for Sanhe Company. In this interface, when a new product on the production line has a defect problem, the alarm interface will display the wrong type and warn the administrator that the new product is unqualified，
 
 ![WechatIMG2163](https://user-images.githubusercontent.com/60961564/202960542-740b8701-a8db-4c76-87ed-d099b9ca89e0.png)
+
+The function of the add button is to save the newly detected data to the database
