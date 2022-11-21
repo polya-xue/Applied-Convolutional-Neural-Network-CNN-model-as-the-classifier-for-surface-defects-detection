@@ -1,3 +1,0 @@
-/home/polya/mine/opencv_for_c++/EgienFace/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/polya/mine/opencv_for_c++/EgienFace/cmake-build-debug/CMakeFiles/EgienFace.dir
-/home/polya/mine/opencv_for_c++/EgienFace/cmake-build-debug/CMakeFiles/edit_cache.dir
