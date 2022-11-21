@@ -1,12 +1,17 @@
-Face recognition system based on linux system C++ environment
-Details: The core idea of EgienFace algorithm is to reduce the dimensionality of image data using PCA algorithm and do the shape similarity calculation after spatial transformation. The face recognition system is based on the EgienFace algorithm, which generates a set of feature vectors for each face in the database, so as to distinguish different faces. At present, the database contains 40 sets of face data, and the process of recognizing faces is fast and the error rate is low.
-Specific process.
-1、First call the original database and use it as the basis to adjust the new face features.
-2、Enable the video_capture program and use the computer's own camera to start capturing. The program will capture different expressions at two-second intervals, normalize the size and store them in the database.
-3、Recognize faces: enable recFace_project, the camera is turned on and faces are recognized. The recognition result will be marked on the screen.
+# YOLO_v3_tutorial_from_scratch
+Accompanying code for Paperspace tutorial series ["How to Implement YOLO v3 Object Detector from Scratch"](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
 
+Here's what a typical output of the detector will look like ;)
 
+![Detection Example](https://i.imgur.com/m2jwnen.png)
 
+## About the training Code
 
+This code is only mean't as a companion to the tutorial series and won't be updated. If you want to have a look at the ever updating YOLO v3 code, go to my other repo at https://github.com/ayooshkathuria/pytorch-yolo-v3
 
+Also, the other repo offers a lot of customisation options, which are not present in this repo for making tutorial easier to follow. (Don't wanna confuse the shit out readers, do we?)
+
+About when is the training code coming? I have my undergraduate thesis this May, and will be busy. So, you might have to wait for a till the second part of May. 
+
+Cheers
 
